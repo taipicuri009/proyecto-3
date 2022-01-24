@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.marca {
+    border-radius:15px 10px 0 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    height: 150px;
+}
+
+.titulo__marca {
+    font-size: 1000px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-main);
+    background:  url(https://img.wattpad.com/94dcf7dd095fbc314467d0899375d281bb1165df/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f386d5245757936536343526749773d3d2d313037353735343131342e313638323662343437343434636539313133343730303632363735322e676966) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--color-white);
+}
+.titulo {
+    font-size:400px;
+    margin: 10px 0;
+    height: 100px;
+}
+  
+.presentacion {
+    border-radius: 30px;
+    border: 3px solid rgb(43, 42, 42);
+    box-shadow:  0 15px 15px rgba(0, 0, 0, 0.918);
+    background-color: rgb(230, 115, 182);
+    margin: 50px auto;
+    height: 500px;
+    width: 60%;
+}
+  
+.container {
+    padding: 50px 10px 0;
+    text-align: center;
+
+}
+  
+.input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin: 10px 0;
+    width: 50%;
+}
+  
+input {
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px
+}
+  
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+  
+.boton {
+    border-radius: 30px;
+    border: 1px solid black;
+    font-weight: 900;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 40%
+}
+
+
+.pregunta {
+    display:block;
+    font-weight: 600;
+    font-size: 27px;
+}

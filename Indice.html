@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>APEmoviescomedy</title>
+    <meta name="description" content="Films of Studio Ghibli"/>
+    <meta name="keywords" content="ghibli, totoro"/>
+    <meta name="author" content="co-authored by Anghel Trillo, Itzel Gonzalez"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icons -->
+    <script src="afb.js" crossorigin="anonymous"></script>
+    <!-- Typography -->
+    <link href="swap.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img class="nav__logo" src="https://i.pinimg.com/564x/b7/41/ea/b741ead13b4cb4c23fea64bc0b8ea9b3.jpg" alt="Movies Comedy">
+        <i id="menuBurguer" class="fas fa-bars" aria-hidden="true"></i>
+        <ul class="menu__dropdown disable">
+          <li class="menu__list">
+            <a href="#home" class="menu__item">Peliculas:)</a>
+          </li>
+          <li class="menu__list">
+            <a href="#statistics" class="menu__item">Statistics</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container" id="home">
+        <section class="menuBar">
+            <section class="search">
+              <input id="Buscar peliculas" type="text" class="menuBar__search" placeholder="Buscar peliculas">
+            </section>
+            <section class="filter">
+              <select id="filterByDirectorProducer" class="filter__comboBox">
+                <option value="all" disabled="" selected="">Director/Producer</option>
+                <option value="all">All</option>
+              <option value="Ignacio Ferreras">Ignacio Ferreras</option>
+              <option value="Mark Louis Dindal">Mark Louis Dindal </option>
+              <option value="Charles Henry Selick">Charles Henry Selick </option>
+              <option value="Pete Docter">Pete Docter</option>
+              <option value="Shawn Levy">Shawn Levy</option>
+              <option value="Ron Howard">Ron Howard</option>
+              <option value="Nick Park.">Nick Park.</option>
+              <option value="Brad Bird">Brad Bird</option>
+              <option value="Lorenzo Mattotti">Lorenzo Mattotti</option>
+              <option value="Pete Docter">Pete Docter</option>
+              <option value="John Lasseter">John Lasseter</option>
+              <option value="Pete Docter">Pete Docter</option>
+              <option value="Byron Howard">Byron Howard</option>
+              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+              <option value="Brad Bird">Brad Bird</option>
+              <option value="Dan Scanlon">Dan Scanlon</option>
+              <option value="Javier Fesser">Javier Fesser</option>
+              <option value="Henry Selick">Henry Selick</option>
+            </select>
+          </section>
+            <section class="filter">
+              <select id="sortBy" class="filter__comboBox">
+                <option value="title" disabled selected>Registrate</option>
+                <option value="title">Name</option>
+                <option value="rt_score">Rating</option>
+                <option value="release_date">Release date</option>
+              </select>
+              <i id="orderData" class="fas fa-sort-amount-down-alt fa-sort-amount-up-alt" aria-hidden="true">
+                ::before
+              </i>
+            </section>
+            <section id="filmsCounter" class="menuBar__showing">Mostrador</section>
+        </section>
+        <section class="container__films">
+          <section class="container__card">
+              <img class="card__image" loading="lazy" src="img/arrugas.jpg">
+              <figcaption class="card__title">arrugas</figcaption>
+            </section>
+          <section class="container__card">
+                <img src="img/chicken.jpg" class="arrugas" alt= "arrugas">
+                <figcaption class = "card__title">Chiken Run</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/colarine.jpg" class="arrugas" alt= "arrugas">
+                <figcaption class = "card__title">coraline</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/del reves.jpg" class="arrugas" alt= "arrugas">
+                <figcaption class = "card__title">del reves
+                </figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/el gigante.jpg" class="arrugas">
+                <figcaption class = "card__title">El gigante de hierrro</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/El_Grinch.jpg" class="arrugas">
+                <figcaption class = "card__title">The grinch</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/la maldicion de las verduras.jpg" class="arrugas">
+                <figcaption class = "card__title">La maldicion de las verduras</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/los increibles.jpg" class="arrugas">
+                <figcaption class = "card__title">Los increibles</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/los osos.jpg" class="arrugas">
+                <figcaption class = "card__title">La famosa invasion de los osos</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/mortadelos.jpg" class="arrugas">
+                <figcaption class = "card__title">Mortadelo y Filemón</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/mosters.jpg" class="arrugas">
+                <figcaption class = "card__title">Monsters university</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/pesadilla antes de navidad.jpg" class="arrugas">
+                <figcaption class = "card__title">Pesadilla antes de navidad</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/ponyo y el alcantilado.jpg" class="arrugas">
+                <figcaption class = "card__title">Ponyo y el alcantilado</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/ratatouil.jpg" class="arrugas">
+                <figcaption class = "card__title">Ratatouil</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/Soul.jpg" class="arrugas">
+                <figcaption class = "card__title">Soul</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/toy stori.jpg" class="arrugas">
+                <figcaption class = "card__title">Toy stori</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/up.jpg" class="arrugas">
+                <figcaption class = "card__title">Up</figcaption>
+          </section>
+          <section class="container__card">
+                <img src="img/zootopia.jpg" class="arrugas">
+                <figcaption class = "card__title">Zootopia</figcaption>
+          </section>
+          </section>
+        </section>
+      </section>
+      <section class="container disable" id="film">
+        <section class="container__generalInformation">
+          <section class="container__returnBack">
+            <i class="fas fa-reply"></i>
+            <p class="paragraph">Back</p>
+          </section>
+          <section class="film__information">
+          </section>
+        </section>
+        <section class="section container__people"></section>
+        <section class="section container__locations"></section>
+        <section class="section container__vehicle"></section>
+      </section>
+      <section class="container disable" id="statistics">
+        <section class="section">
+          <h1 class="mainTitle">Top 10 films</h1>
+          <section class="container__films" id="containerStatistics"></section>
+        </section>
+        <section class="section">
+          <section class="sectionCharts">
+            <h1 class="mainTitle">Characters</h1>
+            <section class="sectionChart">
+              <h2 class="subtitle">Gender</h2>
+              <section class="containerChart">
+                <canvas class="canvasChart" id="gender"></canvas>
+              </section>
+            </section>
+            <section class="sectionChart">
+              <h2 class="subtitle">Specie</h2>
+              <section class="containerChart">
+                <canvas class="canvasChart" id="specie"></canvas>
+              </section>
+            </section>
+          </section>
+          <section class="sectionCharts">
+            <h1 class="mainTitle">Locations</h1>
+            <section class="sectionChart">
+              <h2 class="subtitle">Average types of climate</h2>
+              <section class="containerChart">
+                <canvas class="canvasChart" id="climate"></canvas>
+              </section>
+            </section>
+            <section class="sectionChart">
+              <h2 class="subtitle">Average types of terrain</h2>
+              <section class="containerChart">
+                <canvas class="canvasChart" id="terrain"></canvas>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="modalContainer containerClose">
+        <section class="modal modalClose">
+          <p id="close"><i class="fas fa-times"></i></p>
+          <section class="modalContent">
+          </section>
+        </section>
+      </section>
+    </main>
+      <section class="container" id="film">
+         <section class="container__generalInformation">
+          <section class="container__returnBack">
+             <i class="fas fa-reply" aria-hidden="true">
+              ::before
+             </i>
+             <p class="paragraph">Back</p>
+            </section>
+           <section class="film__information">
+              <section class="divison">
+             <h1 class="mainTitle">arrugas</h1>
+              <section class="container__row">
+              <article class="container__text">
+              <div class="starEmpty">
+              ::before
+                <div class="starFull" style="width:95%">
+                ::before == $
+              </div>
+            </div>
+            <p class="paragraph">95/100</p>
+            </article>
+            <article class="container__text">
+              <h3 class="subtitle">Fecha de lanzamiento: </h3>
+                 <p class="paragraph">27 de enero de 2012</p>
+              </article>
+          </section>
+           <article class="container__description">
+              <p class="paragraph">
+              Emilio y Miguel son dos ancianos que pasan sus días en una residencia para mayores.
+              Cuando los primeros síntomas de Alzheimer se dejan ver en Emilio, Miguel,
+               junto con otros compañeros, hacen todo lo posible para evitar que le trasladen a la 
+               planta destinada a quienes no les queda esperanza. Su disparatado plan tiñe de humor y 
+               ternura el tedioso día a día de la residencia, pues para ellos acaba de empezar una nueva vida.
+              </p>
+          </article>
+            <section class="container__row">
+              <article class="container__text">
+                  <h3 class="subtitle">Productor: </h3>
+                    <p class="paragraph"> José María Balaguer</p>
+                    </article>
+                    <article class="container__text">
+                        <h3 class="subtitle">Director: </h3>
+                        <p class="paragraph"> Ignacio Ferreras</p>
+                      </article>
+                  </section>
+               </section>
+                <section class="film__poster">
+                  <img class="film__image" src="img/arrugas.jpg" loading="lazy">
+             </section>
+        </section>
+      </section>
+  </section>
+
+  <section class="container" id="film">
+    <section class="container__generalInformation">
+      <section class="container__returnBack">
+        <i class="fas fa-reply" aria-hidden="true">
+          ::before
+        </i>
+        <p class="paragraph">Back</p>
+      </section>
+      <section class="film__information">
+        <section class="division">
+          <h1 class="mainTitle">Chiken run</h1>
+          <section class="container__row">
+            <article class="container__text">
+              <div class="starEmpty">
+                ::before
+                <div class="starFull" style="width: 83%;">
+                  ::before
+                </div>
+              </div>
+              <p class="paragraph">83/100</p>
+            </article>
+            <article class="container__text">
+              <h3 class="subtitle">Fecha de lanzamiento:</h3>
+              <p class="paragraph">22 de noviembre de 2005</p>
+            </article>
+          </section>
+          <article class ="container__description">
+              <p class="paragraph">
+              "Esta divertida aventura hecha con las técnicas stop-motion y claymation cuenta la historia de un gallo americano que se enamora de una hermosa gallina en una granja británica. 
+              La pareja decide huir de la granja, pero ellos primero tienen que enfrentarse a la malvada granjera quien intenta mantenerlos bajo control. Los pollos deciden intentar un escape 
+              para no terminar convertidos en pasteles de carne de pollo."
+               </p>
+              </article>
+              <section class="container__row">
+              <article class="container__text">
+                <h3 class="subtitle">Productor</h3>
+                <p class="paragraph"> Nick Park, Peter Lord</p>
+                </article>
+                <article class="container__text">
+                  <h3 class="subtitle">Director: </h3>
+                  <p class="paragraph"> Mark Dindal</p>
+                </article>
+            </section>
+          </section>
+         <section class="fims__poster">
+            <img class="film__image" src="img/chicken.jpg" loading="lazy">
+          </section>
+       </section>
+      </section>
+   </section>
+   <section class="container" id="film">
+    <section class="container__generalInformation">
+     <section class="container__returnBack">
+        <i class="fas fa-reply" aria-hidden="true">
+         ::before
+        </i>
+        <p class="paragraph">Back</p>
+       </section>
+      <section class="film__information">
+         <section class="divison">
+        <h1 class="mainTitle">colarine</h1>
+         <section class="container__row">
+         <article class="container__text">
+         <div class="starEmpty">
+         ::before
+           <div class="starFull" style="width:95%">
+           ::before == $
+         </div>
+       </div>
+       <p class="paragraph">95/100</p>
+       </article>
+       <article class="container__text">
+         <h3 class="subtitle">Fecha de lanzamiento: </h3>
+            <p class="paragraph">12 de febrero de 2009</p>
+         </article>
+     </section>
+     <article class="container__description">
+       <p class="paragraph">
+        Los mundos de Coraline trata de una niña que, al mudarse a su nuevo hogar, descubre una pequeña 
+        puerta escondida en su casa. Aburrida de intentar llamar la atención de sus padres constantemente, 
+        encuentra detrás de esta puerta una realidad alternativa bastante parecida a la que ya es su vida.
+       </p>
+       </article>
+       <section class="container__row">
+         <article class="container__text">
+             <h3 class="subtitle">Productor: </h3>
+               <p class="paragraph"> Henry Selick</p>
+               </article>
+               <article class="container__text">
+                   <h3 class="subtitle">Director: </h3>
+                   <p class="paragraph"> Charles Henry Selick</p>
+                 </article>
+             </section>
+          </section>
+           <section class="film__poster">
+             <img class="film__image" src="img/colarine.jpg" loading="lazy">
+        </section>
+   </section>
+ </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Intesamente</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">90/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">19 de junio de 2015</p>
+       </article>
+   </section>
+   <article class="container__description">
+        <p class="paragraph">
+       Riley acaba de nacer y en el centro de control de su pequeña mente sólo hay sitio para Alegría. 
+       Poco después aparece Tristeza y, más tarde, Ira, Miedo y Asco. Las cinco emociones tendrán que ayudar
+        a la niña cuando, ya con 11 años, su familia se mude desde su idílico pueblo del Medio Oeste estadounidense 
+        a la enorme e intimidante ciudad de San Francisco. Tras una serie de acontecimientos, Alegría y Tristeza 
+        tendrán que trabajar juntas para salvar a Riley.
+         </p>
+       </article>
+        <section class="container__row">
+        <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph"> Jonas Rivera </p>
+              </article>
+               <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph">  Pete Docter</p>
+                </article>
+             </section>
+         </section>
+         <section class="film__poster">
+            <img class="film__image" src="img/del reves.jpg" loading="lazy">
+          </section>
+      </section>
+    </section>
+  </section>
+
+  <section class="container" id="film">
+    <section class="container__generalInformation">
+     <section class="container__returnBack">
+        <i class="fas fa-reply" aria-hidden="true">
+         ::before
+        </i>
+        <p class="paragraph">Back</p>
+       </section>
+      <section class="film__information">
+         <section class="divison">
+        <h1 class="mainTitle">El gigante de hierro</h1>
+         <section class="container__row">
+         <article class="container__text">
+         <div class="starEmpty">
+         ::before
+           <div class="starFull" style="width:95%">
+           ::before == $
+         </div>
+       </div>
+       <p class="paragraph">70/100</p>
+       </article>
+       <article class="container__text">
+         <h3 class="subtitle">Fecha de lanzamiento: </h3>
+            <p class="paragraph">31 de julio de 1999</p>
+         </article>
+     </section>
+      <article class="container__description">
+         <p class="paragraph">
+          La película defiende una preciosa tesis sobre el mundo que en la novela era inexistente…
+          Que nos olvidemos de tener miedo, que no existen personas peligrosas, que buscar
+          la seguridad en las armas es una fantasía tan poco realista como un robot gigante que llega desde el espacio.
+         </p>
+     </article>
+       <section class="container__row">
+         <article class="container__text">
+             <h3 class="subtitle">Productor: </h3>
+               <p class="paragraph"> José María Balaguer</p>
+               </article>
+               <article class="container__text">
+                   <h3 class="subtitle">Director: </h3>
+                   <p class="paragraph"> Ignacio Ferreras</p>
+                 </article>
+             </section>
+          </section>
+           <section class="film__poster">
+             <img class="film__image" src="img/el gigante.jpg" loading="lazy">
+        </section>
+   </section>
+ </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">El Grinch</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">60/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">7 de diciembre de 2000</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        El Grinch es un ser amargado y cascarrabias, que desea acabar con la Navidad de una vez
+         por todas. Desde lo alto del monte Crumpit, observa con resentimiento a la familia Quien,
+         que está muy ocupada con sus preparativos navideños.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph"> Chris Meledandri -Janet Healy</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Yarrow Cheney-Scott Mosier</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+           <img class="film__image" src="img/El_Grinch.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">La maldición de las verduras</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">62/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">5 de octubre de 2005</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Wallace y su perro Gromit tienen un negocio de exterminación de plagas. 
+        Ambos deben evitar que un conejo enorme arruine todas las plantaciones de la ciudad.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph"> David Sproxton</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Steve Box</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+           <img class="film__image" src="img/la maldicion de las verduras.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Los increibles</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">100/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">25 de diciembre de 2004</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Un súper héroe retirado lucha contra el aburrimiento en un
+        suburbio y junto con su familia tiene la oportunidad de salvar al mundo.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph"> John Walker</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Brad Bird</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+           <img class="film__image" src="img/los increibles.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Los osos</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">50/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">28 de enero 2020</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Se trata de una historia sobre el verdadero valor, sobre la amistad y la generosidad,
+         sobre el desapego hacia el lujo y el poder, sobre la dignidad y la necesidad de 
+         aprender a ser uno mismo en cualquier circunstancia de la vida.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Valérie Schermann</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph">Lorenzo Mattotti</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+           <img class="film__image" src="img/los osos.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Mortadelo y Filemón</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">55/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph"> 28 de noviembre de 2014</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        La T.I.A acaba de sufrir uno de sus peores asaltos criminales, un ataque de risa en toda regla perpetrado 
+        por Jimmy el Cachondo para poder hacerse con un documento ultrasecreto.La agencia de espionaje tendrá 
+        que asignar el caso y,por tanto, dejar la seguridad mundial en manos de sus mejores agentes.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Luis Manso </p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph">Javier Fesser</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+           <img class="film__image" src="img/mortadelos.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Monsters university</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">96/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">  20 de junio de 2013 </p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Mike y Sulley son dos jóvenes monstruos que acuden a la universidad para estudiar la carrera de asustadores.
+        Ahora son amigos íntimos y se llevan muy bien, pero no fue siempre así. Durante sus años de universidad,
+        debieron aprender a dejar sus diferencias de lado y a trabajar en equipo.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Kori Rae</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Dan Scanlon</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+           <img class="film__image" src="img/mosters.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Pesadilla antes de Navidad</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">90/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">  20 de junio de 2013 </p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        El Señor de Halloween, Jack Skellington, aburrido de hacer cada año lo mismo, descubre la Navidad en la Ciudad
+        de la Navidad y queda fascinado, por lo que decide emplearse a fondo y mejorar dicha festividad.Con este fin,
+        secuestra a Santa Claus y crea una versión de la Navidad totalmente opuesta a la que existe.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Tim Burton</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Henry Selick</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+          <img class="film__image" src="img/pesadilla antes de navidad.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Ponyo</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">92/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">19 de julio de 2008 </p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Durante una excursión prohibida para ver el mundo de la superficie, una princesa pez de colores
+        conoce a un niño llamado Sosuke, quien le pone el nombre de Ponyo. Ponyo quiere volverse un humano, 
+        y mientras crece su amistad, ella se vuelve más humana. El padre de Ponyo la regresa al reino del océano,
+        pero el deseo de Ponyo es tan poderoso que ella se libera,y en el proceso, derrama una colección 
+        de elixires mágicos que ponen en peligro la aldea de Sosuke.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Toshio Suzuki</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph">Hayao Miyazaki</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+          <img class="film__image" src="img/ponyo y el alcantilado.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Ratatouille</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">92/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">28 de junio de 2007 </p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Durante una excursión prohibida para ver el mundo de la superficie, una princesa pez de colores
+        conoce a un niño llamado Sosuke, quien le pone el nombre de Ponyo. Ponyo quiere volverse un humano, 
+        y mientras crece su amistad, ella se vuelve más humana. El padre de Ponyo la regresa al reino del océano,
+        pero el deseo de Ponyo es tan poderoso que ella se libera,y en el proceso, derrama una colección 
+        de elixires mágicos que ponen en peligro la aldea de Sosuke.
+       </p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Brad Lewis</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Brad Bird</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+          <img class="film__image" src="img/ratatouil.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Soul</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">75/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">11 de octubre de 2020</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Un profesor de música que ha perdido la pasión se transporta fuera de su cuerpo al "Gran Antes"
+         y debe encontrar el camino de regreso con la ayuda de un alma infantil que aprende sobre sí misma.</p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Kemp Powers</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Pete Docter</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+          <img class="film__image" src="img/Soul.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">toy story</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">85/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">11 de octubre de 2020</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Los juguetes de Andy, un niño de seis años, temen que un nuevo regalo les sustituya
+        en el corazón de su dueño.Woody, un vaquero que ha sido hasta ahora el juguete favorito,
+        trata de tranquilizarlos hasta que aparece Buzz Lightyear.</p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Bonnie Arnold</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> John Lasseter</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+          <img class="film__image" src="img/toy stori.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Up : una aventura de altura</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">85/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph"> 11 de junio de 2009</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+        Carl Fredricksen es un vendedor de globos de 78 años de edad dispuesto a cumplir su sueño: atar miles de globos
+        a su casa y volar a Sudamérica. Sin embargo, descubre demasiado tarde a un joven e inesperado polizón. Lo que
+        en principio será recelo, acabará por tornarse simpatía hacia el muchacho mientras juntos pasan fascinantes
+        aventuras en exóticos lugares.</p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Jonas Rivera</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph"> Pete Docter</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+          <img class="film__image" src="img/up.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+
+<section class="container" id="film">
+  <section class="container__generalInformation">
+   <section class="container__returnBack">
+      <i class="fas fa-reply" aria-hidden="true">
+       ::before
+      </i>
+      <p class="paragraph">Back</p>
+     </section>
+    <section class="film__information">
+       <section class="divison">
+      <h1 class="mainTitle">Zootopia</h1>
+       <section class="container__row">
+       <article class="container__text">
+       <div class="starEmpty">
+       ::before
+         <div class="starFull" style="width:95%">
+         ::before == $
+       </div>
+     </div>
+     <p class="paragraph">100/100</p>
+     </article>
+     <article class="container__text">
+       <h3 class="subtitle">Fecha de lanzamiento: </h3>
+          <p class="paragraph">17 de marzo de 2016</p>
+       </article>
+   </section>
+    <article class="container__description">
+       <p class="paragraph">
+       Zootrópolis es una moderna metrópoli donde viven todo tipo de mamíferos. 
+       Cerca de la ciudad vive Judy Hopps, una conejita que no se parece en nada a 
+       sus 275 hermanos ni a sus padres, los encantadores conejos Bonnie y Stu.</p>
+   </article>
+     <section class="container__row">
+       <article class="container__text">
+           <h3 class="subtitle">Productor: </h3>
+             <p class="paragraph">Rich Moore</p>
+             </article>
+             <article class="container__text">
+                 <h3 class="subtitle">Director: </h3>
+                 <p class="paragraph">Byron Howard</p>
+               </article>
+           </section>
+        </section>
+         <section class="film__poster">
+          <img class="film__image" src="img/zootopia.jpg" loading="lazy">
+        </section>
+     </section>
+  </section>
+</section>
+    <div class="presentacion">
+      <div class="marca">
+          <br class="titulo_marca">Descubre novedades de tus peliculas favoritas!!!!!</br>
+          </div>
+          <div class="container">
+              <p class="pregunta" style="color: rgba(15, 105, 240, 0.979);">
+              </p>
+          <a href="personajes.html" id="button" class= "boton">Continuar</a>
+      </div>
+  </div>
+  <script src = "main.js"></script>
+    <footer class="footer">
+      <section>
+        &copy; Todos los derechos reservados 2021
+      </section>
+      <section class="footer_item">
+        <a class="footer_link" href="https://www.facebook.com/TheGhibliFamily/" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="footer_link" href="https://www.instagram.com/hayaomiyazaki/?hl=es-la" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </section>
+    </footer>
+    <!-- Templates -->
+    <template id="card">
+      <img class="card__image" loading="lazy">
+      <figcaption class="card__title"></figcaption>
+    </template>
+    <script src="chart.js"></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
